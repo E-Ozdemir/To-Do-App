@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+}
+.container{
+    background-color: beige;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.task-adder-component{
+    display: flex;
+    justify-content: space-between;
+}
+.header{
+    font-size: 2rem;
+    color: #57606f;
+}
+
+
+.task-header{
+    color: #57606f;
+}
+.task-adder,
+.to-do-table{
+    border: 1px solid black;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: 40%;
+}
+
+.header-div,
+.to-do-table{
+    background-color: rgb(236, 231, 231);
+}
+.head-line{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+
