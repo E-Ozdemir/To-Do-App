@@ -14,10 +14,16 @@
 
 function addFunction(){
     const inputContent = document.querySelector(".task-adder-input").value;
-    console.log("inputContent:",inputContent);
-    const node = document.createElement("li");
-    node.innerText= inputContent;
-    console.log('node:',node);
-    document.querySelector(".tasks").appendChild(node);
+    if(inputContent===''){
+        alert('You can not add an empty input! ')
+    }
+    else{
+
+        console.log("inputContent:",inputContent);
+        const node = document.createElement("li");
+        node.innerText= inputContent;
+        console.log('node:',node);
+        document.querySelector(".tasks").appendChild(node);
+    }
 }
 
