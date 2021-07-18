@@ -22,8 +22,9 @@ function addFunction(){
         console.log("inputContent:",inputContent);
         const node = document.createElement("li");
         node.innerText= inputContent;
-        console.log('node:',node);
+        // console.log('node:',node);
         document.querySelector(".tasks").appendChild(node);
+        document.querySelector(".task-adder-input").value ='';
     }
 }
 

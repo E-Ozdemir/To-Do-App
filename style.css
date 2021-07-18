@@ -1,47 +1,84 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Rajdhani', sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rajdhani", sans-serif;
 }
-.container{
-    background-color: beige;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.container {
+  background-color: beige;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.task-adder-component{
-    display: flex;
-    justify-content: space-between;
+.task-adder-component {
+  display: flex;
+  justify-content: space-between;
 }
-.header{
-    font-size: 2rem;
-    color: #57606f;
+.header {
+  font-size: 2rem;
+  color: #57606f;
 }
 
-
-.task-header{
-    color: #57606f;
+.task-header {
+  color: #57606f;
 }
 .task-adder,
-.to-do-table{
-    border: 1px solid black;
-    padding: 1rem;
-    margin-bottom: 2rem;
-    width: 40%;
+.to-do-table {
+  border: 1px solid black;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 40%;
 }
 
 .header-div,
-.to-do-table{
-    background-color: rgb(236, 231, 231);
+.to-do-table {
+  background-color: rgb(236, 231, 231);
 }
-.head-line{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items: center;
+.head-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
+ul li:hover {
+  background: #ddd;
+}
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
 
-
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+ul {
+  list-style-type: none;
+}
+/* ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+} */
+/* ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  } */
