@@ -64,13 +64,15 @@ ul li {
 }
 ul {
   list-style-type: none;
+  padding: 0;
 }
-/* ul li.checked {
+ul li.checked {
   background: #888;
   color: #fff;
   text-decoration: line-through;
-} */
-/* ul li.checked::before {
+  
+}
+ul li.checked::before {
     content: '';
     position: absolute;
     border-color: #fff;
@@ -81,4 +83,4 @@ ul {
     transform: rotate(45deg);
     height: 15px;
     width: 7px;
-  } */
+  }
